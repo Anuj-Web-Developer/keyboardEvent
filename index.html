@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in JavaScript</title>
+    <style>
+        #container{
+            border: 2px solid black;
+            width: 40vw;
+            height: 50vh;
+            margin-left: 20%;
+            background-color: brown;
+            border-radius: 20px;
+            margin-top: 20%;
+        }
+        h2 ,input{
+            margin-left: 20%;
+        }
+        h1{
+            margin-left: 10%;
+        }
+    </style>
+
+  </head>
+  <body>
+
+<div id="container">
+    <h1> Keyboard Event </h1>
+    <h2> On Key Down</h2>
+    <input type="text" onkeydown="document.querySelector('#container').style.background=this.value"/>
+
+    <h2> On Key up</h2>
+    <input type="text" onkeyup = "document.querySelector('#container').style.background=this.value"/>
+
+    <h2> On Key Press</h2>
+    <input type="text" onkeypress="document.querySelector('#container').style.background=this.value"/>
+</div>
+  </body>
+</html>
